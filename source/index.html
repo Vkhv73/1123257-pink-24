@@ -1,12 +1,268 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Пинк</title>
+  <!-- удалить перед отправкой на проверку -->
+  <link rel="stylesheet" href="/source/css/outline.css">
+</head>
 
-  </body>
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-logo--header">
+      <img class="page-logo--header-image" src="img/logotype-mobile.png" width="74" height="23" alt="Пинк">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nac__wrapper">
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item user-list__item--current">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="user-list__item">
+            <a href="catalog.html">
+              Фотографии
+            </a>
+          </li>
+          <li class="user-list__item">
+            <a href="#">
+              Конкурс
+            </a>
+          </li>
+          <li class="user-list__item">
+            <a href="#">
+              Html academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="page-header__intro">
+      <p class="page-header__intro-text">
+        Взгляните на жизнь
+        иначе!
+      </p>
+      <div class="page-header__upload">
+        <button class="page-header__upload-button" type="button">Скачать приложение</button>
+        <a href="#" class="page-header__upload-os">
+          <img class="page-header__upload-os-icon" src="/source/img/apple-logo.png" width="47" height="56" alt="Apple">
+        </a>
+        <a href="#" class="page-header__upload-os">
+          <img class="page-header__upload-os-icon" src="/source/img/android-logo.png" width="43" height="47" alt="Android">
+        </a>
+        <a href="#" class="page-header__upload-os">
+          <img class="page-header__upload-os-icon" src="/source/img/microsoft-logo.png" width="44" height="41" alt="Microsoft">
+        </a>
+        <p class="page-header__upload-button-text">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </div>
+    </div>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Взгляните на жизнь иначе!</h1>
+    <section class="information">
+      <h2 class="visually-hidden">Устали от серости мегаполиса?</h2>
+      <p class="information__dialogue">
+        <span class="dialogue-question">Устали от серости мегаполиса?</span> <br>
+        <span class="dialogue-offer">Нам есть, что вам предложить!</span>
+      </p>
+      <ul class="information__list">
+        <li class="information__item">
+          <h2 class="information__item--title">
+            Поднимает настроение
+          </h2>
+          <p class="information__item--text">
+            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+          </p>
+        </li>
+        <li class="information__item">
+          <h2 class="information__item--title">
+            Меняет мир вокруг
+          </h2>
+          <p class="information__item--text">
+            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+          </p>
+        </li>
+        <li class="information__item">
+          <h2 class="information__item--title">
+            Заводит новых друзей
+          </h2>
+          <p class="information__item--text">
+            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+          </p>
+        </li>
+        <li class="information__item">
+          <h2 class="information__item--title visually-hidden">
+            Фотографии
+          </h2>
+          <div class="information__item information__item--photo-list">
+            <img class="information__item--photo-item" src="/source/img/iphone-screen-3.png" width="136" height="245" alt="">
+            <img class="information__item--photo-item" src="/source/img/iphone-screen-2.png" width="136" height="245" alt="">
+            <img class="information__item--photo-item" src="/source/img/iphone-screen-1.png" width="136" height="245" alt="">
+            <img class="information__item--photo-item" src="/source/img/iphone-3.png" width="157" height="320" alt="">
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="reviews">
+      <div class="reviews__wrapper slider">
+        <h2 class="visually-hidden">
+          Отзывы наших клиентов
+        </h2>
+        <ul class="reviews__list slider__list">
+          <li class="reviews__item slider__item">
+            <h2 class="reviews__autor">
+              Николай Петров
+            </h2>
+            <p class="reviews__description">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со
+              своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </li>
+        </ul>
+        <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+        <button class="reviews__next" type="button">Следующий отзыв</button>
+        <p class="reviews__toggles slider__toggles">
+          <button class="slider__toggle slider__toggle--current" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
+    <!-- TODO разобраться с слайдером (слайд__тоглес) и с классами для ячеек -->
+    <section class="price">
+      <div class="price__wrapper slider">
+        <h2 class="visually-hidden">Наши тарифы</h2>
+        <table class="price__list slider__list">
+          <tr class="price__item slider__item">
+            <td class="visually-hidden">Название тарифа</td>
+            <td><span class="price__item-name">База</span><br><span class="price__item-cost">1.99 USD</span></td>
+            <td><span class="price__item-name">Стандарт</span><br><span class="price__item-cost">3.99 USD</span></td>
+            <td><span class="price__item-name">Анлим</span><br><span class="price__item-cost">9.99 USD</span></td>
+          </tr>
+          <tr class="price__item-feature">
+            <td class="price__item-feature-name">Розовый фильтр</td>
+            <td class="price__item-feature-status">V</td>
+            <td class="price__item-feature-status">V</td>
+            <td class="price__item-feature-status">V</td>
+          </tr>
+          <tr class="price__item-feature">
+            <td class="price__item-feature-name">Смайлики</td>
+            <td class="price__item-feature-status">X</td>
+            <td class="price__item-feature-status">X</td>
+            <td class="price__item-feature-status">X</td>
+          </tr>
+          <tr class="price__item-feature">
+            <td class="price__item-feature-name">Комментарии</td>
+            <td class="price__item-feature-status">X</td>
+            <td class="price__item-feature-status">X</td>
+            <td class="price__item-feature-status">X</td>
+          </tr>
+        </table>
+        <!-- TODO разобраться дальше. С таблицами вроде порешал. В таблицах сделать переключатель слайдов и слайдер -->
+        <p class="price__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle slider__toggle--current" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <p class="contacts__header">
+          Остались вопросы?
+          Свяжитесь с нами!
+        </p>
+        <div class="contacts__phone">
+          <a class="contacts__phone-number" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        </div>
+        <div class="contacts__email">
+          <a class="contacts__email-number" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts__address">
+          <p class="contacts__address-number">mail@htmlacademy.ru
+            ул. Большая
+            Конюшенная, 19/8
+          </p>
+        </div>
+      </div>
+      <!-- Ниже другой вариант блока КОНТАКТЫ -->
+    </section>
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <p class="contacts__header">
+          Остались вопросы?
+          Свяжитесь с нами!
+        </p>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <h3 class="contacts__item-title">Звоните:</h3>
+            <div class="contacts__phone">
+              <a class="contacts__phone-number" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </div>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__item-title">Пишите:</h3>
+            <div class="contacts__email">
+              <a class="contacts__email-number" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__item-title">Приезжайте в гости:</h3>
+            <div class="contacts__address">
+              <p class="contacts__address-number">mail@htmlacademy.ru
+                ул. Большая
+                Конюшенная, 19/8
+              </p>
+            </div>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__item-map">Приезжайте в гости:</h3>
+            <div class="contacts__map">
+              <img class="contacts__map-source" src="/source/img/map-mobile.png" width="320" height="200" alt="Карта">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+        <img src="/source/img/logotype-footer-mobile.png" width="145" height="40" alt="Логотип">
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">
+              <img src="/source/img/twitter.png" alt="Мы в Твиттере"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+              <img src="/source/img/facebook.png" alt="Мы в Фейсбуке"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
+              <img src="/source/img/youtube.png" alt="Мы в Ютубе"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="/source/img/htmlacademy-logo.png" width="27" height="34" alt="HTML Academy"></a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>
